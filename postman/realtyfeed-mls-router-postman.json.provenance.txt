@@ -1,0 +1,6 @@
+generated: '2026-10-13'
+method: searched
+source: https://postman.realtyfeed.com/api/collections/16197326/2sB3BHn9Um?segregateAuth=true&versionTag=latest
+found_on: https://docs.realtyfeed.com/ (links "Postman Doc https://postman.realtyfeed.com/")
+ownership: Postman Documenter published on the provider's own custom domain postman.realtyfeed.com
+note: verbatim

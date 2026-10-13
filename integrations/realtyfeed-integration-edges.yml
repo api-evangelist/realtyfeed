@@ -1,0 +1,16 @@
+generated: '2026-10-13'
+method: none
+source:
+- https://zapier.com/apps/realtyfeed/integrations
+- https://n8n.io/integrations/realtyfeed/
+- https://composio.dev/toolkits/realtyfeed
+- https://monid.ai/tools/realtyfeed
+checked:
+- https://composio.dev/toolkits/realtyfeed
+- https://monid.ai/tools/realtyfeed
+- https://n8n.io/integrations/realtyfeed/
+- https://zapier.com/apps/realtyfeed/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

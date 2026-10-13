@@ -1,23 +1,126 @@
 aid: realtyfeed
+
 name: RealtyFeed
-description: 'RealtyFeed is a company surfaced via the API Evangelist harvest backlog (source: gap-automotive-real-estate)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: RealtyFeed, a Realtyna company, is a real estate data platform that distributes MLS listing data to brokers,
+  agents, IDX website builders and data vendors. Its MLS Router API is a RESO-certified Web API (OData) at api.realtyfeed.com,
+  authenticated with OAuth2 client credentials issued through the RealtyFeed Dashboard (data vendors get access through a
+  separate invitation-only dashboard). It serves Property, Member, Office, OpenHouse, PropertyRooms, Media, metadata and lookup
+  resources in either RESO or RealtyFeed output, plus geo and history endpoints, and publishes documentation (authentication,
+  searchable fields, error handling, rate limits, changelog) and a public Postman collection. RealtyFeed also offers MLS On
+  The Fly IDX widgets.
+
 url: https://raw.githubusercontent.com/api-evangelist/realtyfeed/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:gap-automotive-real-estate
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+
+x-tier-reason: enrichment pass 2026-10-13 (local-v5; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-13'
+
 modified: '2026-10-13'
+
 tags:
 - Company
-apis: []
+- Real Estate
+- MLS
+- RESO Web API
+- OData
+- IDX
+- Property Data
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/realtyfeed-llms.txt
+- type: SecurityTxt
+  url: well-known/realtyfeed-realtyna-security.txt
+- type: WellKnown
+  url: well-known/realtyfeed-well-known.yml
+- type: Hosts
+  url: hosts/realtyfeed-hosts.yml
+- type: Vendors
+  url: vendors/realtyfeed-vendors.yml
+- type: DomainSecurity
+  url: security/realtyfeed-domain-security.yml
 - type: Website
   url: https://realtyfeed.com/
+- type: Documentation
+  url: https://docs.realtyfeed.com/
+- type: APIReference
+  url: https://realtyna.atlassian.net/wiki/spaces/RA/pages/1157300225/MLS+Router+API
+- type: Authentication
+  url: https://realtyna.atlassian.net/wiki/spaces/RA/pages/1750892546/Authentication
+- type: RateLimits
+  url: https://realtyna.atlassian.net/wiki/spaces/RA/pages/1952710661/Rate+Limits
+- type: ErrorCodes
+  url: https://realtyna.atlassian.net/wiki/spaces/RA/pages/1143046151/Error+Handling
+- type: ChangeLog
+  url: https://realtyna.atlassian.net/wiki/spaces/RA/pages/1934852101/Changelog
+- type: Postman
+  url: postman/realtyfeed-mls-router-postman.json
+- type: PostmanCollection
+  url: https://postman.realtyfeed.com/
+- type: SignUp
+  url: https://dashboard.realtyfeed.com/
+- type: Blog
+  url: https://realtyfeed.com/blog/
+- type: Newsroom
+  url: https://realtyfeed.com/press/
+- type: Leadership
+  url: https://realtyfeed.com/about/leadership/
+- type: TermsOfService
+  url: https://realtyfeed.com/legal/terms/
+- type: PrivacyPolicy
+  url: https://realtyfeed.com/legal/privacy-policy/
+- type: Support
+  url: https://realtyfeed.com/contact/
+
+apis:
+- aid: realtyfeed:mls-router-api
+  name: MLS Router API
+  description: 'RESO-certified Web API (OData) for MLS data distribution: OAuth2 client-credentials token, $metadata, Field/Lookup,
+    Property, Member, Office, OpenHouse, PropertyRooms and Media, with RESO or RealtyFeed output, plus geo and history endpoints.'
+  humanURL: https://realtyna.atlassian.net/wiki/spaces/RA/pages/1157300225/MLS+Router+API
+  baseURL: https://api.realtyfeed.com/reso/odata
+  tags:
+  - RESO Web API
+  - OData
+  - MLS
+  properties:
+  - type: PostmanCollection
+    url: postman/realtyfeed-mls-router-postman.json
+  - type: Documentation
+    url: https://postman.realtyfeed.com/
+  - type: Authentication
+    url: https://realtyna.atlassian.net/wiki/spaces/RA/pages/1750892546/Authentication
+
+x-enrichment:
+  status: enriched
+  pass: local-v5
+  date: '2026-10-13'
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-13'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://api.realtyfeed.com/mcp
+    status: 403
+  - url: https://realtyfeed.com/
+    status: 200
