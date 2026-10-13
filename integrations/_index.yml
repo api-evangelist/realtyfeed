@@ -24,7 +24,7 @@
     endorsements: null
     summary_url: https://certification.reso.org/summary/T00000210
     detected_by: sweep-real-estate.py
-    detected: '2026-10-13'
+    detected: '2026-10-14'
   status: not-a-workflow
   arazzo: null
 - slug: realtyfeed-quest-mls
@@ -48,7 +48,7 @@
     organization_type: MLS
     vendor_uoi: T00000210
     detected_by: sweep-real-estate.py
-    detected: '2026-10-13'
+    detected: '2026-10-14'
   status: not-a-workflow
   arazzo: null
 - slug: realtyfeed-san-diego-mls
@@ -72,7 +72,7 @@
     organization_type: MLS
     vendor_uoi: T00000210
     detected_by: sweep-real-estate.py
-    detected: '2026-10-13'
+    detected: '2026-10-14'
   status: not-a-workflow
   arazzo: null
 - slug: realtyfeed-realtyna
@@ -97,7 +97,7 @@
     organization_type: Technology Company
     vendor_uoi: T00000210
     detected_by: sweep-real-estate.py
-    detected: '2026-10-13'
+    detected: '2026-10-14'
   status: not-a-workflow
   arazzo: null
 - slug: realtyfeed-advanced-real-estate-services-adres
@@ -120,7 +120,7 @@
     organization_type: Technology Company
     vendor_uoi: T00000210
     detected_by: sweep-real-estate.py
-    detected: '2026-10-13'
+    detected: '2026-10-14'
   status: not-a-workflow
   arazzo: null
 - slug: realtyfeed-listing
@@ -143,7 +143,7 @@
     organization_type: MLS
     vendor_uoi: T00000210
     detected_by: sweep-real-estate.py
-    detected: '2026-10-13'
+    detected: '2026-10-14'
   status: not-a-workflow
   arazzo: null
 - slug: realtyfeed-ecuador-mls
@@ -167,6 +167,6 @@
     organization_type: MLS
     vendor_uoi: T00000210
     detected_by: sweep-real-estate.py
-    detected: '2026-10-13'
+    detected: '2026-10-14'
   status: not-a-workflow
   arazzo: null

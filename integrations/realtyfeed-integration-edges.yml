@@ -33,7 +33,7 @@ edges:
     endorsements: null
     summary_url: https://certification.reso.org/summary/T00000210
     detected_by: sweep-real-estate.py
-    detected: '2026-10-13'
+    detected: '2026-10-14'
 - partner_name: Quest MLS
   partner: null
   partner_match: null
@@ -55,7 +55,7 @@ edges:
     organization_type: MLS
     vendor_uoi: T00000210
     detected_by: sweep-real-estate.py
-    detected: '2026-10-13'
+    detected: '2026-10-14'
 - partner_name: San Diego MLS
   partner: null
   partner_match: null
@@ -77,7 +77,7 @@ edges:
     organization_type: MLS
     vendor_uoi: T00000210
     detected_by: sweep-real-estate.py
-    detected: '2026-10-13'
+    detected: '2026-10-14'
 - partner_name: Realtyna
   partner: realtyna
   partner_match: domain
@@ -99,7 +99,7 @@ edges:
     organization_type: Technology Company
     vendor_uoi: T00000210
     detected_by: sweep-real-estate.py
-    detected: '2026-10-13'
+    detected: '2026-10-14'
 - partner_name: Advanced Real Estate Services (ADRES)
   partner: null
   partner_match: null
@@ -120,7 +120,7 @@ edges:
     organization_type: Technology Company
     vendor_uoi: T00000210
     detected_by: sweep-real-estate.py
-    detected: '2026-10-13'
+    detected: '2026-10-14'
 - partner_name: Listing+
   partner: null
   partner_match: null
@@ -141,7 +141,7 @@ edges:
     organization_type: MLS
     vendor_uoi: T00000210
     detected_by: sweep-real-estate.py
-    detected: '2026-10-13'
+    detected: '2026-10-14'
 - partner_name: Ecuador MLS
   partner: null
   partner_match: null
@@ -163,5 +163,5 @@ edges:
     organization_type: MLS
     vendor_uoi: T00000210
     detected_by: sweep-real-estate.py
-    detected: '2026-10-13'
+    detected: '2026-10-14'
 templates: []
