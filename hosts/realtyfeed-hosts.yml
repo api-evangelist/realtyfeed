@@ -18,9 +18,12 @@ hosts:
   found_by:
   - apis[]
   - contract-discovery
+  - vendor-detect
   types: []
   serves:
   - api
+  - api-gateway
+  vendor: aws-api-gateway
   registrable_domain: realtyfeed.com
   role: api
   relation: own
@@ -68,10 +71,13 @@ hosts:
   - site-links
   - namespace-probe
   - well-known
+  - vendor-detect
   types:
   - Documentation
-  serves: []
+  serves:
+  - cdn
   status: 200
+  vendor: cloudfront
   registrable_domain: realtyfeed.com
   role: docs
   relation: own
@@ -90,6 +96,7 @@ hosts:
   - probed
   - contract-discovery
   - well-known
+  - vendor-detect
   types:
   - Website
   - Blog
@@ -98,7 +105,9 @@ hosts:
   - TermsOfService
   - PrivacyPolicy
   - Support
-  serves: []
+  serves:
+  - cdn
+  vendor: cloudflare
   registrable_domain: realtyfeed.com
   role: website
   relation: own

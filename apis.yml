@@ -106,11 +106,6 @@ apis:
   - type: Authentication
     url: https://realtyna.atlassian.net/wiki/spaces/RA/pages/1750892546/Authentication
 
-x-enrichment:
-  status: enriched
-  pass: local-v5
-  date: '2026-10-13'
-
 x-coverage:
   state: none
   reason: no-developer-program
@@ -124,3 +119,7 @@ x-coverage:
     status: 403
   - url: https://realtyfeed.com/
     status: 200
+x-enrichment:
+  status: enriched
+  pass: local-v5
+  date: '2026-10-13'
